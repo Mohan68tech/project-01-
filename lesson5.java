@@ -40,22 +40,38 @@ public static void main(String[] args){
 
     //Multiple if else condition 
 
-    System.out.print("Enter a marks :");
-    int marks = sc.nextInt();
- if(marks > 100){
-    System.out.println("Grade: A");
- }
-    else if(marks >= 80){
-        System.out.println("Grade: B");
-    }
- else if(marks >=60){
-    System.out.println("Grade: C");
- }
- else if(marks >=40){
-    System.out.println("Grade: D");
- }else{
-    System.out.println("Fail");
- }
- sc.close();
+//     System.out.print("Enter a marks :");
+//     int marks = sc.nextInt();
+//  if(marks > 100){
+//     System.out.println("Grade: A");
+//  }
+//     else if(marks >= 80){
+//         System.out.println("Grade: B");
+//     }
+//  else if(marks >=60){
+//     System.out.println("Grade: C");
+//  }
+//  else if(marks >=40){
+//     System.out.println("Grade: D");
+//  }else{
+//     System.out.println("Fail");
+//  }
+//  sc.close();
+System.out.print("enter username: ");
+    String username = sc.nextLine();
+    System.out.print("Enter a password : ");
+    String Password = sc.nextLine();
+
+    if(username.equals("admin")){
+       if(Password.equals("1234")){
+      System.out.println("login succesfully");
+      }else{
+         System.out.println("wrong Password");
+      }
+      }else{
+         System.out.println("Invalid username");
+      }
+    
+
 }
 }
