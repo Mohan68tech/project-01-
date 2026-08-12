@@ -57,21 +57,55 @@ public static void main(String[] args){
 //     System.out.println("Fail");
 //  }
 //  sc.close();
-System.out.print("enter username: ");
-    String username = sc.nextLine();
-    System.out.print("Enter a password : ");
-    String Password = sc.nextLine();
 
-    if(username.equals("admin")){
-       if(Password.equals("1234")){
-      System.out.println("login succesfully");
-      }else{
-         System.out.println("wrong Password");
-      }
-      }else{
-         System.out.println("Invalid username");
-      }
-    
+//nested if
+// System.out.print("enter username: ");
+//     String username = sc.nextLine();
+//     System.out.print("Enter a password : ");
+//     String Password = sc.nextLine();
+
+//     if(username.equals("admin")){
+//        if(Password.equals("1234")){
+//       System.out.println("login succesfully");
+//       }else{
+//          System.out.println("wrong Password");
+//       }
+//       }else{
+//          System.out.println("Invalid username");
+//       }
+//Switch 
+    System.out.print("enter day number : ");
+    int day = sc.nextInt();
+
+    switch(day){
+        case 1:
+            System.out.println("Monday");
+            break;
+        case 2:
+        System.out.println("Tuesday");
+        break;
+        case 3 :
+            System.out.println("Wednesday");
+            break;
+
+            case 4:
+                System.out.println("Thursday");
+                break;
+                case 5:
+                    System.out.println("Friday");
+                    break;
+                case 6 :
+                    System.out.println("Staurday");
+                    break;
+                case 7 :
+                    System.out.println("Sunday");
+                    break;
+                    default :
+                    System.out.println("Invalid");
+    }
+
+    sc.close();
+
 
 }
 }
